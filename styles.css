@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  color: #000000
 }
 
 #content {
@@ -9,6 +11,7 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: auto;
+
 }
 
 .composition {
@@ -16,13 +19,13 @@ body {
   flex-direction: column;
   width: 100%;
   box-sizing:border-box;
-  border:2px solid black;
+
 }
 
 .composition-img {
   display:block;
   width: 90%;
-  border:3px dotted green;
+  border:3px dotted purple;
 }
 
 .composition-img img {
@@ -32,9 +35,9 @@ body {
 
 .composition-text {
   display: flex;
-  width: 90%;
+  width: 2%;
   flex-direction: column;
-  border: 2px solid purple;
+  text-align: left;
 }
 
 .composition-review {
@@ -45,13 +48,14 @@ body {
 
 }
 
+
 section {
   margin: 4rem auto;
   display: block;
 }
 
 nav {
-  background: #2D5D6C;
+  background: #D81E5B;
   height: 9rem;
 }
 
@@ -59,6 +63,7 @@ nav ul, .bigNumberList, .iconList {
   list-style-type: none;
   margin: 0;
   padding: 0px;
+
 }
 
 .bigNumberList, .iconList {
@@ -77,6 +82,8 @@ nav li, .bigNumberList li, .iconList li {
   font-size: 1rem;
   box-sizing: border-box;
   text-align: center;
+
+
 }
 
 nav a {
@@ -91,13 +98,13 @@ nav a {
 }
 
 nav a:focus {
-  background: #FFFFFF;
-  color: #2D5D6C;
+  background: #C6D8D3;
+  color: #D81E5B;
 }
 
 .active {
   color: #8CBFCF;
-  background: #000000;
+  background:#933DB5;
 }
 
 .bigNumberList li, .iconList li {
@@ -106,9 +113,9 @@ nav a:focus {
 
 .bigNumber {
   width: 100%;
-  font-size: 4rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: #2D5D6C;
+  color: #D81E5B;
   display: block;
 }
 
@@ -118,7 +125,7 @@ nav a:focus {
   max-width: 200px;
   height: auto;
   display:block;
-  background: #2D5D6C;
+  background: #D81E5B;
   border-radius: 2rem;
 }
 
@@ -130,7 +137,7 @@ nav a:focus {
 }
 
 footer {
-  background: #2D5D6C;
+  background: #D81E5B;
   color: #ffffff;
   text-align:center;
   margin-top: 1rem;
@@ -156,75 +163,6 @@ footer {
   padding: unset;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 425px) {
 
 .iconList li {
@@ -240,8 +178,11 @@ footer {
   nav li {
     height: 100%;
   }
-  nav li, .bigNumberList li, .iconList li {
-    width: 33.333333%;
+  nav li, .iconList li {
+    width: 33%;
+  }
+  .bigNumberList li{
+    width: 50%
   }
   .composition-img {
     width:150px;
